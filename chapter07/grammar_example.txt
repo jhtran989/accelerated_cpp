@@ -1,0 +1,10 @@
+<verb> jumps
+<location> sky
+<sentence> the <noun-phrase> <verb> <location> 
+<adjective> blue
+<noun> cat
+<noun> dog
+<verb> cry
+<adjective> gray
+<noun-phrase> <noun>
+<noun-phrase> <adjective> <noun-phrase>

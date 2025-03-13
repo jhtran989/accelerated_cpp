@@ -68,7 +68,7 @@ gen_aux(const Grammar& g, const string& word, vector<string>& ret)
 		// locate the rule that corresponds to `word'
 		Grammar::const_iterator it = g.find(word);
 		if (it == g.end())
-			throw logic_error("empty rule");
+			throw logic_error("empty rule with word: " + word);
 
 		// fetch the set of possible rules
 		const Rule_collection& c = it->second;
@@ -104,6 +104,7 @@ int main()
 	return 0;
 }
 
+// FIXME: looks like this is seeded so same result every time it's ran...
 // return a random integer in the range `[0,' `n)'
 int nrand(int n)
 {
